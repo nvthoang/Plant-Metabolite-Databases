@@ -21,14 +21,14 @@ len(calc.descriptors)
 mols1 = []
 for smile in DB_SMILE_list:
     mols1.append(Chem.MolFromSmiles(smile))
+print(len(mols1))
 
 mols2 = []
 for smile in mols1:
     if smile  != None:
         mols2.append(smile)
-
 print(len(mols1))
-print(len(mols2))
+
 
 # Run as Pandas dataframe
 Descriptor_full = calc.pandas(mols2) #Should run small number of compound
