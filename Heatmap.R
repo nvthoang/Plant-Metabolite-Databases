@@ -1,5 +1,5 @@
 # Load data
-hm_data = read.csv('D:/Google Drive - Unlimited/Manuscript/In-process/Plant Metabolite Databases ... (achemso)/Data/Clustering Analysis/data_heatmap.csv', header = T)
+hm_data = read.csv('~/data_heatmap.csv', header = T)
 row.names(hm_data) = hm_data[,1]
 hm_data = hm_data[,-1]
 colnames(hm_data) = row.names(hm_data)
